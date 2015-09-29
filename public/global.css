@@ -105,8 +105,8 @@ header .main-nav .nav-item:hover {
 }
 
 header .main-nav .current-nav-item{
-	color: #A8D526;
-	border-color: #A8D526;
+	color: #FFFFFF;
+	border-color: #FFFFFF;
 }
 
 /***FOOTER***/
@@ -258,7 +258,7 @@ footer .social-icon img{
 }
 
 .home .overview-container .half .overview-list-item .title{
-	color: #DF272C;
+	color: #000000;
 	float: left;
 	font-size: 35px;
 	font-weight: bold;
@@ -392,11 +392,16 @@ footer .social-icon img{
 	text-decoration: none;
 	font-weight: bold;
 	padding: 0;
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid #DF272C;
 	padding: 17px 14px 10px;
 	display: inline-block;
 	letter-spacing: -1px;
 	font-size: 17px;
+}
+
+.event .event-container .single .event-nav li a:hover {
+	text-decoration: none;
+	color: #DF272C;
 }
 
 /***FAMILIES STYLE***/
@@ -466,6 +471,7 @@ footer .social-icon img{
 .about .row-container .title{
 	font-size: 40px;
 	text-align: center;
+	padding-top: 10px;
 	margin-bottom: 40px;
 	color: white;
     background-color: black;
@@ -499,6 +505,10 @@ footer .social-icon img{
 .about .row-container .row .portrait img:first-child:hover{
 	opacity: 0;
 	transition: opacity 0.5s ease;
+}
+
+.about .row-container .row .portrait h1 {
+	margin-top: 5px;
 }
 
 .about .row-container .row .portrait p,
