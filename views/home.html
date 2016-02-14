@@ -5,6 +5,48 @@
 	<title>Taiwanese American Students Association | UT Austin</title>
 	<link rel="stylesheet" href="../public/global.css">
 	<link rel="shortcut icon" href="../public/favicon.ico">
+		<style>
+	.tooltip {
+	  background: #eee;
+	  box-shadow: 0 0 5px #999999;
+	  color: #333;
+	  display: none;
+	  font-size: 12px;
+	  left: 130px;
+	  padding: 10px;
+	  position: absolute;
+	  text-align: center;
+	  top: 95px;
+	  width: 80px;
+	  z-index: 10;
+	}
+	#pie {
+  height: 360px;
+  position: relative;
+  width: 360px;
+  float: left;
+}
+	#bar {
+  height: 360px;
+  position: relative;
+  width: 360px;
+  float: left;
+}
+
+.axis path {
+	display: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+	</style>
+
 </head>
 <body>
 	<div class="main-container">
@@ -26,7 +68,7 @@
 			</div>
 		</header>
 		<!-- BODY CONTENT STARTS HERE -->
-		<div class="body-content wrap clearfix home">
+		<div class="body-content wrap clearfix home load" id="main-container">
 			<div class="hero-image">
 				<div class="overlay left">
 					<div class="overlay-text">
@@ -45,63 +87,50 @@
 						<div class="section">Upcoming Events</div>
 
 						<div class="overview-list-item clearfix">
-							<img src="../images/icon/heart.png" alt="">
-							<h2 class="title">
-
-								<a href="https://www.facebook.com/events/684197291717070/">
-								Keso's Taco House Profit Share!<br>
-								<span class="small-font light highlight" style="letter-spacing: -1px;">
-								11/19/15 ♥ 5PM - 7PM ♥ 600 W MLK Blvd</span>
-								</a>
-							</h2>
-							<p class="subtext">
-								Grab a friend and come grab some tacos at Keso's Taco House! Mention TASA at the register wso we can make some $$ too! Hope to see you there :)
-							</p>
-						</div>
-
-						<div class="overview-list-item clearfix">
-							<img src="../images/icon/bomb.png" alt="">
-							<h2 class="title">
-
-								<a href="https://www.facebook.com/events/1488224944819298/">
-								Blazertag!<br>
-								<span class="small-font light highlight" style="letter-spacing: -1px;">
-								11/19/15 ♥ 8PM - 10PM ♥ Blazertag</span>
-								</a>
-							</h2>
-							<p class="subtext">
-								Get your game on with Blazertag with TASA! 10$ for 2 games lasting about 20 minutes each! Sign up here: http://goo.gl/forms/jFYRcvnVM3 
-							</p>
-						</div>
-
-						<div class="overview-list-item clearfix">
 							<img src="../images/icon/bubble.png" alt="">
 							<h2 class="title">
 
 								<a href="https://www.facebook.com/events/1049338128440509/">
 								Tea Haus Fundraiser!<br>
 								<span class="small-font light highlight" style="letter-spacing: -1px;">
-								11/20/15 ♥ 11AM - 2PM ♥ Jester Center</span>
+								FRIDAYS ♥ 11AM - 2PM ♥ Jester Center</span>
 								</a>
 							</h2>
 							<p class="subtext">
-								Grab your weekly boba fix with some Tea Haus Milk Tea!! 1 for $3 and 3 for $5!
+							Heard about the craze with Tea Haus but have no way of getting there?
+							Don't fear because WE ARE BRINGING BACK TEA HAUS TO YOU! we'll be selling Tea Haus' Boba Milk Tea every Friday!
+							1 for $3 and 3 for $5!
+							</p>
+						</div>
+
+						<div class="overview-list-item clearfix">
+							<img src="../images/icon/camera.png" alt="">
+							<h2 class="title">
+								<a href="https://www.facebook.com/events/915594835191644/">
+								Dogs for Community Service<br>
+								<span class="small-font light highlight" style="letter-spacing: -1px;">
+								2/6/15 ♥ 9AM - NOON ♥ Austin Animal Center</span>
+								</a>
+							</h2>
+							<p class="subtext">		
+								Come play with doggies and mingle with other TASA members		
 							</p>
 						</div>
 
 						<div class="overview-list-item clearfix">
 							<img src="../images/icon/star.png" alt="">
 							<h2 class="title">
-								<a href="https://www.facebook.com/events/1031752526866066/">
-								TASA + CSA PRESENTS: THANKSGIVING PARTY<br>
+								<a href="https://www.facebook.com/events/184393941918761/">
+								ATA Lunar New Year - Volunteer Event<br>
 								<span class="small-font light highlight" style="letter-spacing: -1px;">
-								11/20/15 ♥ 10PM - 1AM ♥ 2616 Salado St</span>
+								2/6/15 ♥ 6PM - 9PM ♥ Austin Animal Center</span>
 								</a>
 							</h2>
-							<p class="subtext">
-								Come party with the best at our Thanksgiving party! 5$ flat fee, 1$ off if you come dressed as a turkey! YOU DO NOT WANT TO MISS THIS.
+							<p class="subtext">		
+								Not going home for Lunar New Year? Want to eat some good food? Or even lion dance? :D Volunteer to lion dance, be a monk, drummer, or even perform!	
 							</p>
 						</div>
+
 
 					</div>
 				</div>
@@ -164,6 +193,18 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="table clearfix">
+					<div class="single">
+						<div class="section">Family Scoreboard</div>
+					</div>
+					<div class="half">
+						<div class="overview-list-item clearfix" id="pie"></div>
+					</div>
+					<div class="half">
+						<div class="overview-list-item clearfix" id="bar"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- FOOTER STARTS HERE -->
@@ -188,4 +229,156 @@
 		</footer>
 	</div>
 </body>
+<script src="../js/d3-3.5.13.js"></script>
+<script src = "../js/jquery-2.1.4.js"></script>
+
+<script>
+	var dataset = [];
+
+        var width = 462;
+        var height = 360;
+        var heightbar = 100;
+
+        var radius = Math.min(width, height) / 2;
+
+        var color = d3.scale.category20b();
+
+var tooltip = d3.select('#pie')
+.append('div')
+.attr('class', 'tooltip');
+
+tooltip.append('div')
+.attr('class', 'label');
+
+tooltip.append('div')
+.attr('class', 'count');
+
+tooltip.append('div')
+.attr('class', 'percent');
+
+
+        var svg = d3.select('#pie')
+          .append('svg')
+          .attr('width', width)
+          .attr('height', height)
+          .append('g')
+          .attr('transform', 'translate(' + (width / 2) + 
+            ',' + (height / 2) + ')');
+
+        var arc = d3.svg.arc()
+          .outerRadius(radius);
+
+        var pie = d3.layout.pie()
+          .value(function(d) { return d.count; })
+          .sort(null);
+
+        var path = svg.selectAll('path')
+          .data(pie(dataset));
+
+var bsvg = d3.select('#bar')
+.append('svg')
+.attr('width', width)
+.attr('height', height);
+
+bsvg.append("g")
+.attr("class", "y axis")
+
+var sy = d3.scale.linear()
+.domain([0, 0])
+.range([0, width-60]);
+
+var y = d3.scale.ordinal()
+.rangeRoundBands([0, heightbar], .1);
+
+var yAxis = d3.svg.axis()
+.scale(y)
+.orient("left");
+
+	for(var x = 1; x < 5; x++){
+		var url = "https://spreadsheets.google.com/feeds/cells/1XbWLdOv1HVswmjCZMC6hcVD4DjByGMMjsEQ502qtHZo/"+ x +"/public/basic?alt=json";
+		$.ajax({
+		    url: url,
+		    dataType: "jsonp",
+		    success:function(data) {
+		        // data.feed.entry is an array of objects that represent each cell
+		        var name = data["feed"]["title"]["$t"];
+				var points;
+		 
+				var arrayLength = data["feed"]["entry"].length;
+				for (var i = 0; i < arrayLength; i++) {
+				    if( data["feed"]["entry"][i]["title"]["$t"] == "B32" )
+				    	points = parseInt(data["feed"]["entry"][i]["content"]["$t"])
+				}
+				dataset.push({"label": name, "count": points})
+				console.log(dataset)
+
+				path.data(pie(dataset))
+				.enter()
+				.append('path')
+				.attr('d', arc)
+				.attr('fill', function(d, i) { return color(i); })	
+				.on('mouseover', function(d) {
+					var total = d3.sum(dataset.map(function(d) {
+						return d.count;
+					}));
+
+					var percent = Math.round(1000 * d.data.count / total) / 10;
+					tooltip.select('.label').html(d.data.label);
+					tooltip.select('.count').html(d.data.count); 
+					tooltip.select('.percent').html(percent + '%'); 
+					tooltip.style('display', 'block');
+				})
+				.on('mouseout', function() {
+					tooltip.style('display', 'none');
+				})
+				.on('mousemove', function(d) {
+					tooltip.style('top', (d3.event.layerY + 10) + 'px')
+					.style('left', (d3.event.layerX + 10) + 'px');
+				});
+
+sy.domain([0, d3.max(dataset, function(d,i) { return d.count; })])
+
+y.domain(dataset.map(function(d) { return d.label; }));
+
+bsvg.select(".y.axis")
+.attr("transform", "translate("+ 60 +","+ 0 +")")
+.call(yAxis);
+
+var bars = bsvg.selectAll("rect").data(dataset);
+
+bars.exit()
+.transition()
+.duration(300)
+.remove();
+
+bars.enter()
+.append("rect")
+.attr("x", 60)
+.attr("y", function(d, i) { console.log("asda"); return i * 25; })
+.attr("width", function(d) { return sy(d.count) }) 
+.attr("height", 20)
+.attr("fill", function(d, i) { return color(i); });
+
+bars.transition()
+.duration(300)
+.attr("width", function(d) { return sy(d.count) }) 
+
+			}
+		});
+	}
+
+</script>
+<script type="text/javascript">
+	window.onload = function (){
+		var p = document.getElementById("main-container");
+		p.className = p.className + "ed";
+		console.log("done")
+	}
+</script>
 </html>
+
+
+
+
+
+

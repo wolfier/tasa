@@ -669,34 +669,6 @@ footer .social-icon img{
 	font-size: 17px;
 }
 
-/***FAMILY STYLE***/
-.families .header { color: #000000; }
-
-.families .family-container .col-50 {
-	width: 50%;
-	float: left;
-	height: 300px;
-}
-
-.families .family-container .col-50 .icon-item {
-	margin: 0 0 10px 10px;
-	border-radius: 7px;
-	border-color: red;
-	padding: 20px;
-	text-align: center;
-
-}
-
-.families .family-container .col-50 .icon-item  a {
-	padding: 12px;
-	opacity: 1;
-	transition: opacity 0.5s;
-}
-
-.families .family-container .col-50 .icon-item  a:hover {
-	opacity: 0.5;
-}
-
 /***ALUMNI STYLE***/
 .alumni .overview-container { padding: 50px 50px; }
 

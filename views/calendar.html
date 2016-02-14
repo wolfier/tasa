@@ -26,7 +26,7 @@
 			</div>
 		</header>
 		<!-- BODY CONTENT STARTS HERE -->
-		<div class="body-content wrap clearfix calender">
+		<div class="body-content wrap clearfix calender load" id="main-container">
 			<div class="hero-image">
 				<div class="overlay left">
 					<div class="overlay-text">
@@ -65,4 +65,11 @@
 		</footer>
 	</div>
 </body>
+<script type="text/javascript">
+	window.onload = function (){
+		var p = document.getElementById("main-container");
+		p.className = p.className + "ed";
+		console.log("done")
+	}
+</script>
 </html>
