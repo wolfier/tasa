@@ -177,13 +177,6 @@ footer .social-icon img{
 	float: right;
 }
 
-/*Brandon Edits*/
-.square{
-	width: 100px; 
-	height: 100px; 
-	background: blue;
-	}
-
 .table { overflow: hidden; }
 
 .hero-image img { vertical-align: top; }
@@ -466,10 +459,8 @@ footer .social-icon img{
 }
 
 .about .highlight-container .overlay{
-	margin-top: -120px;/*also edit*/
+	margin-top: 380px;
 }
-/*Brandon edits*/
-
 
 .about img { vertical-align: top; }
 
