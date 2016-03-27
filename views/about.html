@@ -16,18 +16,7 @@
 		display: none;
 	}
 
-	.imLeft {
-		position:relative;
-		right:75px;
-		overflow:hidden;
-		opacity:0;
-	}
-	.imRight{
-		position:relative;
-		left:75px;
-		overflow:hidden;
-		opacity:0;
-	}
+
 
 	.overlay.left{
 		opacity:0;
@@ -38,7 +27,20 @@
 		opacity:0;
 		margin-right:75px;
 	}
+	
+	.overlay-text {
+	background: #000000;
+	padding: 25px 50px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	}
 
+	#toFix{
+		margin-left:0px;
+		opacity:1;
+	}
 
 	</style>
 
@@ -65,7 +67,7 @@
 		<!-- BODY CONTENT STARTS HERE -->
 		<div class="body-content wrap clearfix about load" id="main-container">
 			<div class="hero-image">
-				<div class="overlay left">
+				<div id="toFix" class="overlay left">
 					<div class="overlay-text">
 						The<span class="highlight"><a href="../views/events.html"> events </a></span> are super cool.
 						<br>
@@ -160,7 +162,7 @@
 				<div>
 					<h1 class="title"> MEET OUR JUNIOR OFFICERS </h1>
 				</div>
-				<div class="row four">
+				<div class="row three">
 					<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/cl.jpg"></div>
 				   		<img src="../images/portrait/cl-flip.jpg">
@@ -179,17 +181,17 @@
 				   		<h1> Max Tang </h1>
 				   		<p> Internal JO </p>
 				   	</div>
+				</div>
+
+				<div id="infJO0">A problem has occured</div>
+
+				<div class="row four">
 				     <div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/dm.jpg"></div>
 				   		<img src="../images/portrait/dm-flip.jpg">
 				   		<h1> Darren Mao </h1>
 				   		<p> External JO </p>
 				   	</div>
-				</div>
-
-				<div id="infJO0">A problem has occured</div>
-
-				<div class="row three">
 					<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/qs.jpg"></div>
 				   		<img src="../images/portrait/qs-flip.jpg">
@@ -212,13 +214,7 @@
 
 				<div id="infJO1">A problem has occured</div>
 
-				<div class="row four">
-					<div class="portrait">
-				   		<div class="rowJO"><img src="../images/portrait/al.jpg"></div>
-				   		<img src="../images/portrait/al-flip.jpg">
-				   		<h1> Angel Lo </h1>
-				   		<p> Special Events JO </p>
-				   	</div>
+				<div class="row three">
 					<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/jt.jpg"></div>
 				   		<img src="../images/portrait/jt-flip.jpg">
@@ -231,23 +227,17 @@
 				   		<h1> Jason Chih </h1>
 				   		<p> Finance JO </p>
 				   	</div>
-				    <div class="portrait">
-				   		<div class="rowJO"><img src="../images/portrait/ix.jpg"></div>
-				   		<img src="../images/portrait/ix-flip.jpg">
-				   		<h1> Iris Xu </h1>
-				   		<p> Finance JO </p>
-				   	</div>
-				</div>
-
-				<div id="infJO2">A problem has occured</div>
-
-				<div class="row three">
-					<div class="portrait">
+				   	<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/va.jpg"></div>
 				   		<img src="../images/portrait/va-flip.jpg">
 				   		<h1> Vanessa Alexandra </h1>
 				   		<p> Philanthropy JO </p>
 				   	</div>
+				</div>
+
+				<div id="infJO2">A problem has occured</div>
+
+				<div class="row four">
 					<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/ali.jpg"></div>
 				   		<img src="../images/portrait/ali-flip.jpg">
@@ -260,17 +250,23 @@
 				   		<h1> Sara Wong </h1>
 				   		<p> Marketing JO </p>
 				   	</div>
-				</div>
-
-				<div id="infJO3">A problem has occured</div>
-
-				<div class="row four">
-					<div class="portrait">
+				   	<div class="portrait">
+				   		<div class="rowJO"><img src="../images/portrait/ix.jpg"></div>
+				   		<img src="../images/portrait/ix-flip.jpg">
+				   		<h1> Iris Xu </h1>
+				   		<p> Finance JO </p>
+				   	</div>
+				   	<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/dx.jpg"></div>
 				   		<img src="../images/portrait/dx-flip.jpg">
 				   		<h1> Duo Xu </h1>
 				   		<p> Marketing JO </p>
 				   	 </div>
+				</div>
+
+				<div id="infJO3">A problem has occured</div>
+
+				<div class="row three">
 					 <div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/sc.jpg"></div>
 				   		<img src="../images/portrait/sc-flip.jpg">
@@ -283,7 +279,7 @@
 				   		<h1> Leslie Yeh </h1>
 				   		<p> Media JO </p>
 				   	</div>
-					<div class="portrait">
+				   	<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/bs.jpg"></div>
 				   		<img src="../images/portrait/bs-flip.jpg">
 				   		<h1> Brandon Shang </h1>
@@ -293,7 +289,7 @@
 
 				<div id="infJO4">A problem has occured</div>
 
-				<div class = "row three">
+				<div class = "row four">
 					<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/ls.jpg"></div>
 				   		<img src="../images/portrait/ls-flip.jpg">
@@ -312,17 +308,17 @@
 				   		<h1> Alan Cooper </h1>
 				   		<p> Communications JO </p>
 				   	</div>
-				</div>
-
-				<div id="infJO5">A problem has occured</div>
-
-				<div class = "row four">
-					<div class="portrait">
+				   	<div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/jl.jpg"></div>
 				   		<img src="../images/portrait/jl-flip.jpg">
 				   		<h1> Justin Liang </h1>
 				   		<p> Athletics JO </p>
 				   	</div>
+				</div>
+
+				<div id="infJO5">A problem has occured</div>
+
+				<div class = "row three">
 				    <div class="portrait">
 				   		<div class="rowJO"><img src="../images/portrait/wl.jpg"></div>
 				   		<img src="../images/portrait/wl-flip.jpg">
@@ -539,7 +535,7 @@
 				}
 			};
 
-			var JOArray = new Array(4,3,4,3,4,3,4);//denotes the pictures per row
+			var JOArray = new Array(3,4,3,4,3,4,3);//denotes the pictures per row
 			function setJOIndex(){
 				for(var i =0; i<fixer;i++)
 					picnum+=JOArray[i];

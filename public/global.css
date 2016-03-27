@@ -182,7 +182,20 @@ footer .social-icon img{
 	width: 100px; 
 	height: 100px; 
 	background: blue;
-	}
+}
+
+.imLeft {
+	position:relative;
+	right:75px;
+	overflow:hidden;
+	opacity:0;
+}
+.imRight{
+	position:relative;
+	left:75px;
+	overflow:hidden;
+	opacity:0;
+}
 
 .table { overflow: hidden; }
 
