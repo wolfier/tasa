@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="../public/favicon.ico">
 	
 	<style>
+
 	.rowOf, .rowJO{
 		cursor:pointer; cursor:hand;
 	}
@@ -16,29 +17,8 @@
 		display: none;
 	}
 
-
-
-	.overlay.left{
-		opacity:0;
-		margin-left:75px;
-	}
-
-	.overlay.right{
-		opacity:0;
-		margin-right:75px;
-	}
-	
-	.overlay-text {
-	background: #000000;
-	padding: 25px 50px;
-	font-size: 30px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	}
-
 	#toFix{
-		margin-left:0px;
+		left:-20px;
 		opacity:1;
 	}
 
@@ -494,7 +474,7 @@
 				onRow = cRow;
 				onInf = cInf;
 				onName=cName;
-				$(cInf).slideDown("slow");
+				$(cInf).delay(400).slideDown("slow");
 			};				
 		};
 

@@ -196,6 +196,7 @@ footer .social-icon img{
 	overflow:hidden;
 	opacity:0;
 }
+/*Brandon edits*/
 
 .table { overflow: hidden; }
 
@@ -483,6 +484,26 @@ footer .social-icon img{
 }
 /*Brandon edits*/
 
+.about .overlay.left{
+		opacity:0;
+		left:55px;
+	}
+
+.about .overlay.right{
+		opacity:0;
+		right:55px;
+	}
+
+
+
+.about .overlay-text {
+	background: #000000;
+	padding: 25px 50px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	}
 
 .about img { vertical-align: top; }
 
