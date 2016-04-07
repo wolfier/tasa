@@ -78,7 +78,8 @@
 					</div>
 					<div class="triangle"></div>
 				</div>
-				<img src="../images/hero/23.jpg" alt="">
+
+				<img id="hero-top" src="../images/hero/31.jpg" alt="">
 			</div>
 
 			<div class="overview-container">
@@ -101,50 +102,8 @@
 							1 for $3 and 3 for $5!
 							</p>
 						</div>
-
-						<div class="overview-list-item clearfix">
-							<img src="../images/icon/cart.png" alt="">
-							<h2 class="title">
-								<a href="https://www.facebook.com/events/178861865832558/">
-								General Meeting - Egg Tart Making<br>
-								<span class="small-font light highlight" style="letter-spacing: -1px;">
-								3/23/16 ♥ 7PM - 9PM ♥ Jester West Kitchen</span>
-								</a>
-							</h2>
-							<p class="subtext">		
-								Make and of course eat delicious egg tarts and catch up on spring break stories!	
-							</p>
-						</div>
-
-						<div class="overview-list-item clearfix">
-							<img src="../images/icon/bolt.png" alt="">
-							<h2 class="title">
-								<a href="https://www.facebook.com/events/201057296934595/">
-								TASA goes Kayaking<br>
-								<span class="small-font light highlight" style="letter-spacing: -1px;">
-								3/26/16 ♥ 10AM ♥ Lady Bird Lake</span>
-								</a>
-							</h2>
-							<p class="subtext">		
-								Do you miss spring break? Well don't worry, a kayak trip with us will cheer you right back up!	
-							</p>
-						</div>
-
-						<div class="overview-list-item clearfix">
-							<img src="../images/icon/star.png" alt="">
-							<h2 class="title">
-								<a href="https://www.facebook.com/texas.tasa/events">
-								Taste of Taiwan<br>
-								<span class="small-font light highlight" style="letter-spacing: -1px;">
-								3/31/16 ♥ 7PM - 10PM ♥ Main Mall</span>
-								</a>
-							</h2>
-							<p class="subtext">		
-								FREE food, FREE entertainment, FREE PRIZES! Come celebrate Taiwanese culture for the night and create irreplaceable memories.
-							</p>
-						</div>
-
-						<div class="overview-list-item clearfix">
+					
+						<!-- <div class="overview-list-item clearfix">
 							<img src="../images/icon/volume.png" alt="">
 							<h2 class="title">
 								<a href="https://www.facebook.com/texas.tasa/events">
@@ -175,16 +134,16 @@
 						<div class="overview-list-item clearfix">
 							<img src="../images/icon/magicwand.png" alt="">
 							<h2 class="title">
-								<a href="https://www.facebook.com/events/388167037974556/">
-								ABSA & TASA Social<br>
+								<a href="https://www.facebook.com/events/1573578379620082/">
+								ABSA & TASA Mixer<br>
 								<span class="small-font light highlight" style="letter-spacing: -1px;">
-								4/3/16 ♥ 2 30PM ♥ FAC</span>
+								4/3/16 ♥ 2 30PM ♥ SAC 2.302</span>
 								</a>
 							</h2>
 							<p class="subtext">		
-								Top secret shoruded in mystery.
+								Karoke isn't about sounding good it's about sounding bad together. So come out next Sunday and terrbile sing with us! 
 							</p>
-						</div>
+						</div> -->
 
 					</div>
 				</div>
@@ -287,15 +246,18 @@
 <script src = "../js/jquery-2.1.4.js"></script>
 
 <script>
-	var dataset = [];
 
-        var width = 462;
-        var height = 360;
-        var heightbar = 100;
+$("#hero-top").attr("src", "../images/hero/9" + Math.floor(Math.random() * 7) + ".jpg");
 
-        var radius = Math.min(width, height) / 2;
+var dataset = [];
 
-        var color = d3.scale.category20b();
+var width = 462;
+var height = 360;
+var heightbar = 100;
+
+var radius = Math.min(width, height) / 2;
+
+var color = d3.scale.category20b();
 
 var tooltip = d3.select('#pie')
 .append('div')
