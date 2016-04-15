@@ -8,14 +8,7 @@
 	
 	<style>
 
-	.rowOf, .rowJO{
-		cursor:pointer; cursor:hand;
-	}
-	.info{
-		background-color: white;
-		color:#DF272C;
-		display: none;
-	}
+
 
 	#toFix{
 		left:-20px;
@@ -454,6 +447,7 @@
 		var cName ='';
 		var infoOfficer='Blank';
 		var picsrc = '';
+		var Inf = ".info";
 		
 
 		
@@ -476,8 +470,6 @@
 			};				
 		};
 
-		var Inf = ".info";
-		var Row = ".rowOf";
 		var fixer = 0;//used to fix the index / tell which row on
 		$(".rowOf").click(function(){
 				fixer = $(this.parentNode.parentNode).index();
@@ -492,9 +484,6 @@
 			});
 
 
-		/*have to fix the entire fixer program, use the same thing as before for what row to do*/
-
-
 			var OArray = new Array(/*Officers*/3,4,3, /*JO's*/3,4,3,4,3,4,3);//denotes the pictures per row
 			function setIndex(){//this sorts through what element to grab the value from
 				for(var i =0; i<fixer;i++)
@@ -503,7 +492,7 @@
 
 			function fixIndex(){//accounts for other div elements in indexing
 					fixer = Math.floor(fixer/2);//assumes a specific format of picture container->info->picture container, etc.
-					if(temp==2)
+					if(temp==2)//temp is the flag set for officers/JO's
 						{fixer+=3;}//todo I don't actually know why this works
 			};
 
@@ -511,7 +500,7 @@
 			function setName(){
 				var temp = "info";
 				temp = document.getElementsByClassName(temp);
-				cName = $(picsrc[picnum]).find('img').attr('src');//toFix (review this)
+				cName = $(picsrc[picnum]).find('img').attr('src');
 				cName = cName.replace(".jpg", "");
 				cName = cName.replace("../images/portrait/", "");//isolates the initials/designation
 				setInfo();

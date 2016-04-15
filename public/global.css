@@ -177,26 +177,6 @@ footer .social-icon img{
 	float: right;
 }
 
-/*Brandon Edits*/
-.square{
-	width: 100px; 
-	height: 100px; 
-	background: blue;
-}
-
-.imLeft {
-	position:relative;
-	right:75px;
-	overflow:hidden;
-	opacity:0;
-}
-.imRight{
-	position:relative;
-	left:75px;
-	overflow:hidden;
-	opacity:0;
-}
-/*Brandon edits*/
 
 .table { overflow: hidden; }
 
@@ -483,6 +463,30 @@ footer .social-icon img{
 	margin-top: -120px;/*also edit*/
 }
 /*Brandon edits*/
+.about .imLeft {
+	position:relative;
+	right:75px;
+	overflow:hidden;
+	opacity:0;
+}
+.about .imRight{
+	position:relative;
+	left:75px;
+	overflow:hidden;
+	opacity:0;
+}
+/*Brandon edits*/
+
+.about .rowOf, .about .rowJO{
+	cursor:pointer; cursor:hand;
+}
+
+.about .info{
+	background-color: white;
+	color:#DF272C;
+	display: none;
+}
+/*end Brandon Edits*/
 
 .about .overlay.left{
 		opacity:0;
